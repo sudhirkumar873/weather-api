@@ -1,0 +1,49 @@
+.container {
+  max-width: 100vw;
+  margin: 20px auto;
+  @apply bg-sky-200 min-h-screen flex flex-col justify-center;
+}
+/* App.css */
+
+@keyframes cloudMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: cloudMove 30s linear infinite;
+}
+
+.cloud:nth-child(2) {
+  width: 250px;
+  height: 150px;
+  animation-duration: 40s;
+  top: 30%;
+  left: 10%;
+}
+
+.cloud:nth-child(3) {
+  width: 150px;
+  height: 90px;
+  animation-duration: 20s;
+  top: 50%;
+  left: 60%;
+}
+
+.sun {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ffd700, #ff8c00);
+  border-radius: 50%;
+  top: 10%;
+  left: 75%;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.7);
+}
+
